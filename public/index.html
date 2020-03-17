@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>Pokemon React App by RoshanRJ</title>
+  </head>
+  <body>
+    <h3>Pokemon React App by RoshanRJ</h3>
+    <h4>You can access the application by entering '/pokemon' in the browser url bar.</h4>
+    
+    <ul>
+      <li><strong>Deployment:</strong></li>
+      <ol>
+      <li>First install "gh-pages" by running "npm install gh-pages in the terminal of your project which you need to deployment."</li>
+      <li>Now link your github repositary to your folder by running "git remote add origin https://github.com/roshanrj/reactjs.git".</li>
+      <li>Add "homepage":"https://roshanrj.github.io/reactjs" in  package.json below "private" property.</li>
+      <li>Add "predeploy": "npm run build","deploy": "gh-pages -d build" in scripts node of package.json</li>
+      <li>Run command "npm run deploy" in the terminal. So, your application will get published and can be accessed your the url printed in the terminal.</li>
+      <li>In my case: https://roshanrj.github.io/reactjs/ as, i m using react-router.</li>
+      </ol>
+    </ul>
+
+    <ul>
+      <li><strong>Testing:</strong>
+        <ol>
+          <li>For Random Pokemon card, cookie will get created once for every day, which will help to generate a random card on daily basis. You can check in the application tab and cookie section. Name of the cookie is "isRandomCardShowed".</li>
+          <li>Also, created a entry of random pokemon card generated to store the data in localStorage. So every refresh the random card component will be loaded from localstorage.</li>
+          <li>User can search pokemon by entering the pokemon name in the input box provided.</li>
+          <li>If the pokemon is found then Pokemon card component will be loaded else it will show "No Pokemon Found!" Message on the page.</li>
+        </ol>
+    </ul>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
